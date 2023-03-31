@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      function validate()
+    {
+      if(document.myForm.file.value==""){
+    
+      alert("Please provide your  Image");
+      }
+    if(document.myForm.studentname.value==""){
+    
+      alert("Please provide your Student's name");
+      }
+    if(document.myForm.fathername.value==""){
+    
+      alert("Please provide your Father's name");
+      }
+    if(document.myForm.mothername.value==""){
+    
+      alert("Please provide your Mother's name ");
+
+      }
+      if(document.myForm.address.value==""){
+        alert("Please provide your email adress");
+      }
+
+      if(document.myForm.mobile.value==""){
+        alert("Please provide your number");
+      }}
+    
+    </script>
+    
+  </head>
+  <body>
+    <img src="logomoto.jpeg">
+    <h1>XYZ College/School</h1>
+    <h1>Student Registration Form</h1>
+    <form name="myForm" onsubmit="return(validate());">
+      <fieldset>
+        <label for="profile-picture">Student's Image: <input id="profile-picture" type="file" name="file"/></label>
+        <label for="first-name">Student's Name: <input id="first-name" name="studentname" type="text" placeholder="Full Name"  /></label>
+        <label for="last-name">Father's Name: <input id="last-name" name="fathername" type="text" placeholder="Father's Full Name"  /></label>
+        <label for="last-name">Mother's Name: <input id="last-name" name="mothername" type="text" placeholder="Mother's Full Name"  /></label>
+        Gender:
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Male</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Female</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Other</label>
+        <label for="Date of birth">Date of Birth<input id="business-account" type="date" name="date" class="inline" /></label>
+        <label for="email">Email: <input id="email" name="address" type="email" placeholder="email@xyz.com"  /></label>
+        <label for="Level">Level:
+          <select name="level" id="level">
+              <option value="1">High School</option>
+              <option value="2">Primary</option>
+              <option value="3">College</option>
+          </select>
+      </label>
+      <label for="Department">Department:
+          <select name="department" id="Department" >
+              <option value="4">Electrical Engineering</option>
+              <option value="5">Driving</option>
+              <option value="5">Information Technpology</option>
+          </select>
+      </label>
+      <label for="Tell">Tel/Mobile:
+          <input type="number" name="mobile" id="Mobile" placeholder="xxx xxx xxxx" >
+      </label>
+      <input type="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
